@@ -1,23 +1,25 @@
+
 class User():
     def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.password = password
+        self.ShoppingList = []
 
     def create_shoppinglist(self, title, description):
-        if title is not self.shopping.keys():
-            self.shopping[title] = description
-            self.shopping.list.append(self.shoppinglist)
+        if title is not self.ShoppingList.keys():
+            self.ShoppingList[title] = description
+            self.ShoppingList.list.append(self.ShoppingList)
             return True
         else:
             return False
 
     def delete_shoppinglist(self, title):
-        if title in self.Myshoppinglist.keys():
-            del self.Myshoppinglist[title]
-        return self.Myshoppinglist
+        if title in self.ShoppingList.keys():
+            del self.ShoppingList[title]
+        return self.ShoppingList
 
     def update_shoppinglist(self, title, description):
-        if title in self.Myshopping.keys():
-            self.Myshopping[title] = description
-            return self.Myshopping
+        if title in self.ShoppingList.keys():
+            self.ShoppingList[title] = description
+            return self.ShoppingList
