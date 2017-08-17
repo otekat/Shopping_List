@@ -1,14 +1,14 @@
-class ShoppingList():
+class ShoppingList:
     def __init__(self):
         self.users = {}
-        self.users_shoppinglist = []
+        self.users_ShoppingList = []
 
     def user_register(self, user):
         if user.email in self.users.keys():
             return False
         else:
             self.users.update({user.email: user})
-            self.users_shoppinglist.append(self.users)
+            self.users_ShoppingList.append(self.users)
             return True
 
     def get_user(self, email):
