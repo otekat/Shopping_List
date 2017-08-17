@@ -1,15 +1,16 @@
+import random
 
-class User():
+class User:
     def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.password = password
-        self.ShoppingList = []
+        self.ShoppingList = {}
 
     def create_shoppinglist(self, title, description):
         if title is not self.ShoppingList.keys():
             self.ShoppingList[title] = description
-            self.ShoppingList.list.append(self.ShoppingList)
+            self.ShoppingList.keys()
             return True
         else:
             return False
