@@ -9,9 +9,9 @@
         <div class="">
             <h1>Please Login</h1>
             <br>
-            <form action="" method="POST">
-                <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
-                <input type="text" placeholder="Password" name="password" value="{{ request.form.username }}">
+            <form action="{{ url_for('login')}}" method="POST">
+                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Password" name="password">
                 <input class="btn btn-default" type="submit" value="Login">
             </form>
             {% if error %}
