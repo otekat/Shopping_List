@@ -1,3 +1,5 @@
+import random
+
 class ShoppingList:
     def __init__(self):
         self.users = {}
@@ -20,5 +22,3 @@ class ShoppingList:
         if email in self.users.keys():
             if self.users[email].password == password:
                 return True
-
-
