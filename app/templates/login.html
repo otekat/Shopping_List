@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <title>My ShoppingList-login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href ="static/bootstrap.min.css.map" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="">
+            <h1>Please Login</h1>
+            <br>
+            <form action="" method="POST">
+                <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
+                <input type="text" placeholder="Password" name="password" value="{{ request.form.username }}">
+                <input class="btn btn-default" type="submit" value="Login">
+            </form>
+            {% if error %}
+                <p class="error"><strong>Error:</strong>{{ error }}</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
